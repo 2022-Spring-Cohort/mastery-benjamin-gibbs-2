@@ -16,7 +16,7 @@
         <h1 class="header__title">Surviving Coding Boot Camp</h1>
         <nav class="header__nav">
             <div class="header__nav-item"><a href="/" class="header__nav-link">Home</a></div>
-            <div class="header__nav-item"><a href="/hashtags" class="header__nav-link">Hashtags</a></div>
+            <div class="header__nav-item"><a href="/all-hashtags" class="header__nav-link">Hashtags</a></div>
         </nav>
     </header>
     <main class="main-content">
@@ -32,6 +32,25 @@
             </nav>
         </section>
     </main>
+        <div class="footer">
+            <form class="newPostInput" th:action="'/posts/' + ${topic.id}" method="POST">
+<!--                <label class="input" for="newTopic">Topic:</label>-->
+<!--                <input class="input" id="newTopic" name="newTopic" placeholder="topic"><br>-->
+                <p>Want to enter a new post?</p>
+                <p>do it here:</p>
+                <label class="input" for="newTitle">Title:</label>
+                <input class="input" id="newTitle" name="title" placeholder="title"><br>
+
+                <label class="input" for="newPost">Text:</label>
+                <input class="input" id="newPost" name="content" placeholder="newPost"><br>
+
+                <label class="input" for="newPostAuthor">Author:</label>
+                <input class="input" id="newPostAuthor" name="author" placeholder="newPostAuthor"><br>
+
+                <input class="input submit" type="submit" value="Submit">
+            </form>
+
+
 </div>
 </body>
 

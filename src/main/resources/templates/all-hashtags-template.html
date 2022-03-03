@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/allhashtags.css">
+    <title>All-Hash</title>
+</head>
+<body>
+
+    <div class="container">
+<!--        <div th:replace="fragments.html::header"></div>-->
+
+        <div class="main">
+                <ul class="hashtagsContainer">
+                    <li th:each="hashtag: ${hashtags}" class="hashtags">
+                        <a th:href=" '/hashtags/' + ${hashtag.id}" th:text="${hashtag.hashtag}"></a>
+                    </li>
+                </ul>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
