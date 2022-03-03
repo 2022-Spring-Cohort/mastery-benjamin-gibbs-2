@@ -1,0 +1,38 @@
+.hashtagsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hashtags{
+    margin: 15px;
+    margin-left: -5px;
+    list-style: none;
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    border: solid transparent;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+.hashtags a{
+    padding: 10px;
+}
+@media screen and (max-width: 700px){
+    .hashtagsContainer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+   .hashtag1{
+       width: 98%;
+       margin-left: -15px;
+   }
+}
+
+
+
+
+
+
+
+
+
